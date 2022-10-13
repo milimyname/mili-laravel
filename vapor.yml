@@ -1,11 +1,11 @@
-id: 36446
+id: 36597
 name: mili-laravel
 environments:
-  production:
-    memory: 1024
-    cli-memory: 512
-    runtime: "php-8.1:al2"
-    build:
-      - "composer install --no-dev"
-      - "php artisan event:cache"
-      - "npm ci && npm run build && rm -rf node_modules"
+    production:
+        memory: 1024
+        cli-memory: 512
+        runtime: 'php-8.1:al2'
+        build:
+            - 'composer install --no-dev'
+            - 'php artisan event:cache'
+            - 'npm ci && npm run build && rm -rf node_modules'
